@@ -10,7 +10,7 @@ A random network can be generated using newNetwork in network.c. You just have t
 &nbsp;&nbsp;&nbsp;&nbsp;Network* network = newNetwork(layers, 3);
 This will generate a network that takes 784 inputs and gives 10 outputs.
 
-### Network training
+#### Network training
 It can then be trained using the functions in training.c. The simplest function to use is void learn(Network\* network, long maxTimeSec, TrainingExample\*\* trnExamples, int nbTrn, int batchSize).
 maxTimeSec is the time the training will take in seconds (it will just loop until the time is up)
 trnExamples is the array of training examples used for the training (more on than later). nbTrn is the size of this array.
